@@ -8,8 +8,8 @@ plugins {
     id("net.minecrell.plugin-yml.bukkit") version "0.5.2"
 }
 
-group = "org.example"
-version = "1.0.0"
+group = "de.dasphiller"
+version = "1.0"
 
 repositories {
     mavenCentral()
@@ -43,16 +43,16 @@ tasks {
 
 
 bukkit {
-    name = "ExamplePlugin"
+    name = "Ideas"
     apiVersion = "1.19"
     authors = listOf(
-        "Your Name",
+        "xPhiller",
     )
-    main = "$group.exampleplugin.ExamplePlugin"
+    main = "$group.ideas.Main"
     version = getVersion().toString()
     libraries = listOf(
         "net.axay:kspigot:1.19.1",
         "de.dasphiller.extensions:extensions:$extensionsVersion"
     )
-    prefix = "ExamplePlugin"
+    prefix = "Ideas"
 }

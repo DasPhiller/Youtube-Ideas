@@ -1,11 +1,13 @@
-package org.example.exampleplugin
+package de.dasphiller.ideas
 
+import de.dasphiller.ideas.listener.EntityListener
 import net.axay.kspigot.main.KSpigot
 
-class ExamplePlugin : KSpigot() {
+class Main : KSpigot() {
 
     override fun startup() {
         logger.info("The Plugin was enabled!")
+        EntityListener
     }
 
     override fun shutdown() {
